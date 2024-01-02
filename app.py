@@ -115,11 +115,11 @@ my_dict = {
 df = pd.DataFrame.from_dict([my_dict])
 
 
-st.header("The configuration of your e-bike is below")
+st.header("The configuration of your e-bike is below.")
 st.table(df)
 
 
-st.subheader("Press predict if configuration is okay")
+st.subheader("Press predict if configuration is okay!")
 
 if st.button("Predict"):
     prediction = rf_model.predict(df)
